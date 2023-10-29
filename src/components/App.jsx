@@ -21,7 +21,7 @@ export const App = () => {
         <b>Age:</b>
         {jacob.age}
       </p>
-      <img src={jacom.avatar} alt={jacom.name} width="80" height="80" />
+      <img src={jacob.avatar} alt={jacob.name} width="80" height="80" />
     </div>
   </div>
 };
