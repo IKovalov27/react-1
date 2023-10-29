@@ -17,8 +17,11 @@ export const App = () => {
         <b>Email:</b>
         {jacob.email}
       </p>
-      <p>Age</p>
-      <img src="avatar" alt="" />
+      <p>
+        <b>Age:</b>
+        {jacob.age}
+      </p>
+      <img src={jacom.avatar} alt={jacom.name} width="80" height="80" />
     </div>
   </div>
 };
