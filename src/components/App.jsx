@@ -14,32 +14,26 @@ const olendau = {
   avatar: `https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0Vmtqupl5WKIsVe83rJSzJmWfIn-sdOq9P8Rk8iY7ymK6ZhgRrNv85sgYAjwHUsCiik0&usqp=CAU`,
 }
 
+const Profile = (props) => {
+  return (
+    <div>
+      <img src={props.imgUrl} alt={props.username} width="120" height="120" />
+      <p>
+        <b>Username: </b> {props.username}
+      </p>
+      <p>
+        <b>Email: </b> {props.email}
+      </p>    
+      <p>
+        <b>Age: </b> {props.age}
+      </p>
+    </div>
+  );
+};
+
 export const App = () => {
   return <div>
-    <div>
-      <img src={jacob.avatar} alt={jacob.name} width="120" height="120" />
-      <p>
-        <b>Username: </b> {jacob.name}
-      </p>
-      <p>
-        <b>Email: </b> {jacob.email}
-      </p>
-      <p>
-        <b>Age: </b> {jacob.age}
-      </p>
-    </div>
-
-    <div>
-      <img src={olendau.avatar} alt={olendau.name} width="120" height="120" />
-      <p>
-        <b>Username: </b> {olendau.name}
-      </p>
-      <p>
-        <b>Email: </b> {olendau.email}
-      </p>
-      <p>
-        <b>Age: </b> {olendau.age}
-      </p>
-    </div>
+    <Profile username={jacob.name} imgUrl={jacob.avatar} age={jacob.age} email={jacob.email} />
+    <Profile username={olendau.name} imgUrl={olendau.avatar} age={olendau.age} email={olendau.email} />
   </div>
 };
