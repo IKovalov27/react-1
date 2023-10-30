@@ -45,6 +45,6 @@ const pilots = [
 
 export const App = () => {
   return <div>
-    {pilot.map(pilot => <Profile imgUrl={pilot.avatar} username={pilot.name} email={pilot.email} age={pilot.age} />)}
+    {pilots.map(pilot => <Profile imgUrl={pilot.avatar} username={pilot.name} email={pilot.email} age={pilot.age} />)}
   </div>
 };
