@@ -44,7 +44,10 @@ const pilots = [
 
 
 export const App = () => {
-  return <div>
-    {pilots.map(pilot => <Profile imgUrl={pilot.avatar} username={pilot.name} email={pilot.email} age={pilot.age} />)}
-  </div>
+  return (
+    <div>
+      <h1>Top rated pilots</h1>
+      <PilotList pilots={pilots} />
+    </div>
+  )
 };
