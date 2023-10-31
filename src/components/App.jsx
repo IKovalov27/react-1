@@ -1,5 +1,5 @@
 import { PilotList } from "./PilotList";
-import { FaBeer } from 'react-icons/fa';
+import { HiBeaker } from "react-icons/hi";
 
 /* const jacob = { 
   id: `1`,
@@ -48,7 +48,7 @@ export const App = () => {
   return (
     <div>
       <h1>Top rated pilots</h1>
-      <FaBeer />
+      <HiBeaker />
       <PilotList pilots={pilots} />
     </div>
   )
