@@ -1,4 +1,5 @@
 import { PilotList } from "./PilotList";
+import { FaBeer } from 'react-icons/fa';
 
 /* const jacob = { 
   id: `1`,
@@ -47,6 +48,7 @@ export const App = () => {
   return (
     <div>
       <h1>Top rated pilots</h1>
+      <FaBeer />
       <PilotList pilots={pilots} />
     </div>
   )
