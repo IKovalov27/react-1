@@ -1,3 +1,5 @@
+import { HiMail } from "react-icons/hi";
+
 export const Profile = ({imgUrl, username, email, age}) => {
     return (
       <div>
@@ -6,7 +8,7 @@ export const Profile = ({imgUrl, username, email, age}) => {
           <b>Username: </b> {username}
         </p>
         <p>
-          <b>Email: </b> {email}
+          <b>Email: <HiMail size="15" /> </b> {email}
         </p>    
         <p>
           <b>Age: </b> {age}
