@@ -1,8 +1,9 @@
-import { Profile } from "./Profile";
+import { Profile } from "../Profile/Profile";
+import { List } from "./PilotList.styled";
 
 export const PilotList = ({ pilots }) => {
     return (
-        <ul>
+        <ul style={List}>
             {pilots.map(pilot => {
                 return (
                     <li key={pilot.id}>
