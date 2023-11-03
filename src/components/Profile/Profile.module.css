@@ -1,0 +1,14 @@
+.alert {
+    margin-top: 0;
+    margin-bottom: 8px; 
+}
+
+.alert:hover {
+    background-color: brown;
+}
+
+.image {
+    margin-bottom: 10px;
+}
+
+

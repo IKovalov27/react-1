@@ -1,12 +1,12 @@
 import { Profile } from "../Profile/Profile";
-import { List, ListItem } from "./PilotList.styled";
+import css from "./PilotList.module.css";
 
 export const PilotList = ({ pilots }) => {
     return (
-        <ul style={List}>
+        <ul className={css.list}>
             {pilots.map(pilot => {
                 return (
-                    <li style={ListItem} key={pilot.id}>
+                    <li className={css.listItem} key={pilot.id}>
                         <Profile 
                             imgUrl={pilot.avatar}
                             username={pilot.username}
@@ -15,7 +15,7 @@ export const PilotList = ({ pilots }) => {
                         />
                     </li>
                 );
-            })};
+            })}
         </ul>
     )
 }
