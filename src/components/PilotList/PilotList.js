@@ -9,7 +9,7 @@ export const PilotList = ({ pilots }) => {
                     <li style={ListItem} key={pilot.id}>
                         <Profile 
                             imgUrl={pilot.avatar}
-                            username={pilot.name}
+                            username={pilot.username}
                             age={pilot.age}
                             email={pilot.email}
                         />
