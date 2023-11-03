@@ -1,18 +1,18 @@
-import { HiMail } from "react-icons/hi";
+import { Text } from "./Profile.styled";
 
 export const Profile = ({imgUrl, name, email, age}) => {
     return (
       <div>
         <img src={imgUrl} alt={name} width="120" height="120" />
-        <p>
+        <Text>
           <b>Username: </b> {name}
-        </p>
-        <p>
+        </Text>
+        <Text>
           <b>Email: </b> {email}
-        </p>    
-        <p>
+        </Text>    
+        <Text>
           <b>Age: </b> {age}
-        </p>
+        </Text>
       </div>
     );
   };

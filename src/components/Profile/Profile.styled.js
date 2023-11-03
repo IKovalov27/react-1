@@ -1,4 +1,4 @@
 export const Text = {
-    margin-top: 0,
-    margin-bottom: 8, 
+    marginTop: 0,
+    marginBottom: 8, 
 }
